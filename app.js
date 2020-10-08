@@ -28,7 +28,7 @@
 
  if (check) {
      button.textContent = "Subscribed";
-     button.setAttribute("disabled", true);
+     button.disabled = true
  }
  button.addEventListener("click", async () => {
      firebase.database().ref("ip/").once('value').then((snapshot) => {
