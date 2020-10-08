@@ -44,4 +44,5 @@
 
      localStorage.setItem("count", "done");
      button.textContent = "Subscribed";
+     button.disabled = true
  });
